@@ -259,17 +259,16 @@ const DataTable = () => {
 
             {/* pagination */}
             <div
-              className="flex justify-center p-2 bg-white dark:bg-gray-800 rounded-bl-lg rounded-br-lg"
+              className="flex justify-center p-2 bg-white rounded-bl-lg rounded-br-lg"
               id="flextorow"
             >
               <nav aria-label="Page navigation example">
-                <ul class="flex items-center -space-x-px h-8 text-sm">
+                <ul class="flex items-center -space-x-px h-8 text-sm flex-col sm:flex-row">
                   <li>
                     <a
                       href="#"
                       class="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700"
                     >
-                      <span class="sr-only">Previous</span>
                       <svg
                         class="w-2.5 h-2.5 rtl:rotate-180"
                         aria-hidden="true"
