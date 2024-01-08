@@ -431,7 +431,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             <ul className="">
               {/* Dashboard*/}
               <li
-                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                className={`px-3 py-2 rounded-md mb-0.5 last:mb-0 ${
                   pathname.includes("/") && "bg-gray-700"
                 }`}
               >
