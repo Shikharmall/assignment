@@ -5,6 +5,7 @@ import ThemeProvider from "./utils/ThemeContext";
 import App from "./App";
 import { CookiesProvider } from "react-cookie";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <CookiesProvider>
       <Router>
