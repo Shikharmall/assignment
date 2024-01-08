@@ -93,7 +93,7 @@ const DataTable = () => {
             </div>
           </div>
 
-          <div className="page-wrapper px-4 sm:px-6 lg:px-8 pt-8">
+          <div className="page-wrapper px-4 sm:px-6 lg:px-8 py-6 pb-5">
             <div className="page-content">
               <div className="flex justify-between">
                 <h6 className="text-uppercase font-semibold">
@@ -104,7 +104,7 @@ const DataTable = () => {
           </div>
 
           <div className="relative shadow-md sm:rounded-lg p-3 pt-0 m-8 mt-0">
-            <div className="flex flex-wrap items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-tl-lg rounded-tr-lg">
+            <div className="flex flex-wrap items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-tl-lg rounded-tr-lg pt-1">
               <div className="relative p-2 box-border">
                 <label htmlFor="table-search" className="sr-only">
                   Search
