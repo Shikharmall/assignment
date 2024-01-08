@@ -96,7 +96,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             </svg>
           </button>
 
-          <NavLink end to="/dashboard" className="block">
+          <NavLink end to="/" className="block">
             <div className="flex">
               {/* Logo */}
               <div className="flex justify-center items-center">
@@ -267,7 +267,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable11"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
