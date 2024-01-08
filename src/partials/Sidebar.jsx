@@ -244,7 +244,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable11"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -312,7 +312,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable22"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -335,7 +335,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -358,7 +358,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -381,7 +381,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable11"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -404,7 +404,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable11"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
