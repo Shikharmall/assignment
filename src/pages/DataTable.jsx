@@ -103,7 +103,7 @@ const DataTable = () => {
             </div>
           </div>
 
-          <div className="relative shadow-md sm:rounded-lg p-3 pt-1 m-8">
+          <div className="relative shadow-md sm:rounded-lg p-3 pt-0 m-8 mt-0">
             <div className="flex flex-wrap items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-tl-lg rounded-tr-lg">
               <div className="relative p-2 box-border">
                 <label htmlFor="table-search" className="sr-only">

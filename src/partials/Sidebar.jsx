@@ -152,7 +152,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable11"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -175,7 +175,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable12"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -198,7 +198,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable13"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -221,7 +221,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable11"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
