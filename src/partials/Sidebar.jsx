@@ -221,7 +221,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/datatable11"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -244,7 +244,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/datatable11"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -267,7 +267,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/datatable11"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"
@@ -291,9 +291,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
-                    pathname.includes("datatable")
+                    pathname.includes("/")
                       ? "hover:text-slate-200"
                       : "hover:text-white"
                   }`}
@@ -314,7 +314,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/datatable22"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("society")
                       ? "hover:text-slate-200"

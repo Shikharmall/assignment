@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/datatable" element={<DataTable/>} />
+        <Route exact path="/" element={<DataTable/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
