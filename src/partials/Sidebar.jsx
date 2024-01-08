@@ -284,9 +284,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               </li>
 
               <li
-                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname === "/" ||
-                  (pathname.includes("datatable") && "bg-gray-700")
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-700
                 }`}
               >
                 <NavLink
