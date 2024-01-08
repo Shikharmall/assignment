@@ -13,7 +13,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
 
   return (
     <header className="sticky top-0 bg-white dark:bg-[#182235] border-b border-slate-200 dark:border-slate-700 z-30">
-      <div className="px-4 sm:px-6 lg:px-8">
+      <div className="px-2 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 -mb-px">
           {/* Header: Left side */}
           <div className="w-1/4 flex items-center">
@@ -118,7 +118,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
           </div>
 
           {/* Header: Right side */}
-          <div className="w-1/4 flex justify-end items-end space-x-3justify-end">
+          <div className="w-1/4 flex justify-end items-end space-x-3 justify-end">
             {/*<Notifications align="right" />*/}
             {/*<Help align="right" />*/}
             {/*<ThemeToggle />*/}
