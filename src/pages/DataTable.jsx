@@ -25,12 +25,12 @@ const DataTable = () => {
 
   return (
     <>
-      <div className="flex h-screen overflow-hidden">
+      <div className="flex h-screen overflow-hidden bg-white">
         {/* Sidebar */}
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         {/* Content area */}
-        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-white">
+        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden ">
           {/*  Site header */}
           <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
@@ -103,7 +103,7 @@ const DataTable = () => {
             </div>
           </div>
 
-          <div className="relative shadow-lg sm:rounded-lg p-3 pt-1 ">
+          <div className="relative shadow-md sm:rounded-lg p-3 pt-1 m-8">
             <div className="flex flex-wrap items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-tl-lg rounded-tr-lg">
               <div className="relative p-2 box-border">
                 <label htmlFor="table-search" className="sr-only">
@@ -173,7 +173,7 @@ const DataTable = () => {
             </div>
 
             {/* table */}
-            <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto shadow-md py-4 px-4">
+            <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto py-4 px-4">
               <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-lg">
                 <thead className=" text-sm font-thin text-gray-600 bg-gray-100">
                   <tr>
