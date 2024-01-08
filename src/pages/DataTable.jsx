@@ -103,7 +103,7 @@ const DataTable = () => {
             </div>
           </div>
 
-          <div className="relative sm:rounded-lg p-3 pt-1">
+          <div className="relative shadow-lg sm:rounded-lg p-3 pt-1 ">
             <div className="flex flex-wrap items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-tl-lg rounded-tr-lg">
               <div className="relative p-2 box-border">
                 <label htmlFor="table-search" className="sr-only">
@@ -175,7 +175,7 @@ const DataTable = () => {
             {/* table */}
             <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto shadow-md py-4 px-4">
               <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-lg">
-                <thead className="text-sm text-gray-700 bg-gray-100 font-thin ">
+                <thead className=" text-sm font-thin text-gray-600 bg-gray-100">
                   <tr>
                     <th
                       scope="col"
@@ -184,10 +184,24 @@ const DataTable = () => {
                       Order ID
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      Order date
+                      <div className="flex justify-end items-center">
+                        Order date &nbsp;
+                        <svg
+                          fill="#000000"
+                          className="w-3.5 h-3.5"
+                          viewBox="-6.5 0 32 32"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>dropdown</title>
+                          <path d="M18.813 11.406l-7.906 9.906c-0.75 0.906-1.906 0.906-2.625 0l-7.906-9.906c-0.75-0.938-0.375-1.656 0.781-1.656h16.875c1.188 0 1.531 0.719 0.781 1.656z"></path>
+                        </svg>
+                      </div>
                     </th>
-                    <th scope="col" className="px-6 py-3 ">
-                      Order amount
+                    <th scope="col" className="px-6 py-3">
+                      <div className="flex justify-end items-center">
+                        Order amount
+                      </div>
                     </th>
                     <th
                       scope="col"
@@ -214,7 +228,7 @@ const DataTable = () => {
                   {data && data.length > 0
                     ? data
                         .slice(indexOfFirstPost, indexOfLastPost)
-                        .map((item, index) => (
+                        .map((_, index) => (
                           <tr
                             className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
                             key={index}
@@ -222,8 +236,16 @@ const DataTable = () => {
                             <td className="px-6 py-4 uppercase text-blue-500 text-bold">
                               #281209
                             </td>
-                            <td className="px-6 py-4">7 July, 2023</td>
-                            <td className="px-6 py-4">₹1,278.23</td>
+                            <td className="px-6 py-4">
+                              <div className="flex justify-end items-center">
+                                7 July, 2023
+                              </div>
+                            </td>
+                            <td className="px-6 py-4">
+                              <div className="flex justify-end items-center">
+                                ₹1,278.23
+                              </div>
+                            </td>
                             <td className="px-6 py-4 flex items-center justify-end">
                               ₹22
                             </td>
