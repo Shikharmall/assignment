@@ -103,8 +103,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 <img
                   src={Logo}
                   alt="logo"
-                  width="45"
-                  height="45"
+                  width="40"
+                  height="40"
                   className="rounded"
                 />
               </div>

@@ -9,7 +9,7 @@ const DataTable = () => {
   const [postsPerPage, setPostsPerPage] = useState(10);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [search, setSearch] = useState("");
-  
+
   const iterationArray = Array.from({ length: 9 });
   const data = Array.from({ length: 10 });
 
@@ -171,6 +171,8 @@ const DataTable = () => {
                 </div>
               </div>
             </div>
+
+            {/* table */}
             <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto shadow-md py-4 px-4">
               <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-lg">
                 <thead className="text-sm text-gray-700 bg-gray-100 font-thin ">
@@ -231,7 +233,9 @@ const DataTable = () => {
                 </tbody>
               </table>
             </div>
+            {/* table */}
 
+            {/* pagination */}
             <div
               className="flex justify-center p-2 bg-white dark:bg-gray-800 rounded-bl-lg rounded-br-lg"
               id="flextorow"
@@ -241,7 +245,7 @@ const DataTable = () => {
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700"
+                      class="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700"
                     >
                       <span class="sr-only">Previous</span>
                       <svg
@@ -265,7 +269,7 @@ const DataTable = () => {
                   <li>
                     <a
                       href="#"
-                      class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-gray-600 bg-white hover:bg-gray-100 hover:text-gray-700"
+                      class="z-10 m-1 flex items-center justify-center px-3 h-8 leading-tight text-gray-600 bg-white hover:bg-gray-100 hover:text-gray-700"
                     >
                       1
                     </a>
@@ -296,7 +300,7 @@ const DataTable = () => {
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                      class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                     >
                       <p>Next &nbsp;</p>
                       <span class="sr-only">Next</span>
@@ -320,6 +324,7 @@ const DataTable = () => {
                 </ul>
               </nav>
             </div>
+            {/* pagination */}
           </div>
         </div>
       </div>
