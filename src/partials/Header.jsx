@@ -6,6 +6,8 @@ import Help from "../components/DropdownHelp";
 import UserMenu from "../components/DropdownProfile";
 import ThemeToggle from "../components/ThemeToggle";
 
+import '../css/default.css';
+
 function Header({ sidebarOpen, setSidebarOpen }) {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
@@ -36,46 +38,51 @@ function Header({ sidebarOpen, setSidebarOpen }) {
                 <rect x="4" y="17" width="16" height="2" />
               </svg>
             </button>
-            <p className="text-md text-gray-800 font-thin">Payments </p>
+            <p className="text-md text-gray-800 font-thin ">Payments </p>
             &nbsp; &nbsp; &nbsp;
-            <svg
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              className="w-3 h-3"
-              viewBox="0 0 64 64"
-              enable-background="new 0 0 64 64"
-              xml:space="preserve"
-            >
-              <path
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                d="M53.92,10.081c12.107,12.105,12.107,31.732,0,43.838
+            <div id="hidecontent">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                className="w-3 h-3"
+                viewBox="0 0 64 64"
+                enable-background="new 0 0 64 64"
+                xml:space="preserve"
+              >
+                <path
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  d="M53.92,10.081c12.107,12.105,12.107,31.732,0,43.838
 	c-12.106,12.108-31.734,12.108-43.84,0c-12.107-12.105-12.107-31.732,0-43.838C22.186-2.027,41.813-2.027,53.92,10.081z"
-              />
-              <line
-                stroke="#000000"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                x1="30"
-                y1="43"
-                x2="30"
-                y2="47"
-              />
-              <path
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                d="M24,21c0-3,2-5,8-5c5,0,8,3,8,7s-6,7-6,7s-4,2-4,8v1
+                />
+                <line
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  x1="30"
+                  y1="43"
+                  x2="30"
+                  y2="47"
+                />
+                <path
+                  fill="none"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  d="M24,21c0-3,2-5,8-5c5,0,8,3,8,7s-6,7-6,7s-4,2-4,8v1
 	"
-              />
-            </svg>
+                />
+              </svg>
+            </div>
             &nbsp;
-            <p className="text-xs text-gray-600 font-thin"> How it works</p>
+            <p className="text-xs text-gray-600 font-thin" id="hidecontent">
+              {" "}
+              How it works
+            </p>
           </div>
 
           {/* Header: mid side */}

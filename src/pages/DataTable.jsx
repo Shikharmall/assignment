@@ -39,7 +39,7 @@ const DataTable = () => {
               <div className="flex justify-between">
                 <h6 className="mb-0 text-uppercase font-semibold">Overview</h6>
                 <div>
-                  <label className="sr-only">End Year:</label>
+                  <label className="sr-only">Last Month:</label>
                   <select className="block p-1 pl-3 pr-8 text-sm text-gray-500 border border-gray-300 placeholder-gray-400 rounded-sm bg-gray-50 focus:ring-gray-500 focus:border-gray-500 box-border">
                     <option value="">Last Month</option>
 
@@ -263,7 +263,7 @@ const DataTable = () => {
               id="flextorow"
             >
               <nav aria-label="Page navigation example">
-                <ul class="flex items-center -space-x-px h-8 text-sm flex-col sm:flex-row">
+                <ul class="flex items-center -space-x-px h-8 text-sm overflow-x">
                   <li>
                     <a
                       href="#"
