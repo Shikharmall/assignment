@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
+@media only screen and (min-width: 0px) and (max-width: 650px) {
     /* Styles specific to devices with a width between 601 and 1024 pixels */
     #hidecontent{
         display: none;
