@@ -1,6 +1,6 @@
-##Dashboard Assignment
+Dashboard Assignment
 
-###Technologies Used - 
+Technologies Used - 
  1. React JS
  2. Tailwind CSS
  3. Vite
