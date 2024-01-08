@@ -435,7 +435,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               >
                 <NavLink
                   end
-                  to="/datatable"
+                  to="/"
                   className={`block text-slate-200 truncate transition duration-150 ${
                     pathname.includes("/")
                       ? "hover:text-slate-200"
