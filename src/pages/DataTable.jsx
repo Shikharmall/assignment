@@ -23,6 +23,20 @@ const DataTable = () => {
   };
   const years = ["January", "February", "March", "April", "May"];
 
+  const myInlineStyles = {
+    color: "#1A181E",
+    //fontSize: '16px',    // Font size of 16 pixels
+    //fontWeight: 'bold',  // Bold text
+    // Add more styles as needed
+  };
+
+  const myInlineStyles1 = {
+    color: "#1A181E",
+    //fontSize: '16px',    // Font size of 16 pixels
+    //fontWeight: 'bold',  // Bold text
+    // Add more styles as needed
+  };
+
   return (
     <>
       <div className="flex h-screen overflow-hidden bg-white">
@@ -96,7 +110,10 @@ const DataTable = () => {
           <div className="page-wrapper px-4 sm:px-6 lg:px-8 py-6 pb-5">
             <div className="page-content">
               <div className="flex justify-between">
-                <h6 className="text-uppercase font-semibold">
+                <h6
+                  className="text-uppercase font-semibold"
+                  style={myInlineStyles}
+                >
                   Transactions | This month
                 </h6>
               </div>
@@ -175,16 +192,16 @@ const DataTable = () => {
             {/* table */}
             <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto py-4 px-4">
               <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-lg">
-                <thead className=" text-sm font-thin text-gray-600 bg-gray-100">
+                <thead className="text-sm font-inter font-medium text-gray-600 bg-gray-100">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 flex items-center justify-start"
+                      className="px-6 py-3 flex items-center justify-start font-inter font-medium"
                     >
                       Order ID
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      <div className="flex justify-end items-center">
+                      <div className="flex justify-end items-center font-inter font-medium">
                         Order date &nbsp;
                         <svg
                           fill="#000000"
@@ -199,13 +216,13 @@ const DataTable = () => {
                       </div>
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      <div className="flex justify-end items-center">
+                      <div className="flex justify-end items-center font-inter font-medium">
                         Order amount
                       </div>
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 flex items-center justify-end"
+                      className="px-6 py-3 flex items-center justify-end font-inter font-medium"
                     >
                       Transaction fee &nbsp;
                       <svg
@@ -259,92 +276,90 @@ const DataTable = () => {
 
             {/* pagination */}
             <div className="flex justify-center">
-            <div
-              className="flex p-2 bg-white rounded-bl-lg rounded-br-lg overflow-auto"
-            >
-              <nav aria-label="Page navigation example">
-                <ul class="flex items-center h-8 text-sm">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700"
-                    >
-                      <svg
-                        class="w-2.5 h-2.5 rtl:rotate-180"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 6 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 1 1 5l4 4"
-                        />
-                      </svg>
-                      <p id="hidecontent">&nbsp; Previous</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="z-10 m-1 flex items-center justify-center px-3 h-8 leading-tight text-gray-600 bg-white hover:bg-gray-100 hover:text-gray-700"
-                    >
-                      1
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-gray-600 bg-white hover:bg-gray-100 hover:text-gray-700"
-                    >
-                      ...
-                    </a>
-                  </li>
-                  {iterationArray.map((_, index) => (
-                    <li key={index}>
+              <div className="flex p-2 bg-white rounded-bl-lg rounded-br-lg overflow-auto">
+                <nav aria-label="Page navigation example">
+                  <ul class="flex items-center h-8 text-sm">
+                    <li>
                       <a
                         href="#"
-                        aria-current="page"
-                        className={`z-10 flex items-center justify-center px-2 h-8 leading-tight hover:bg-gray-100 hover:text-gray-700 ${
-                          index === 0
-                            ? "text-white bg-blue-700 rounded"
-                            : "text-gray-600 bg-white "
-                        }`}
+                        class="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700"
                       >
-                        1{index}
+                        <svg
+                          class="w-2.5 h-2.5 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                        <p id="hidecontent">&nbsp; Previous</p>
                       </a>
                     </li>
-                  ))}
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                    >
-                      <p id="hidecontent">Next &nbsp;</p>
-                      <svg
-                        class="w-2.5 h-2.5 rtl:rotate-180"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 6 10"
+                    <li>
+                      <a
+                        href="#"
+                        class="z-10 m-1 flex items-center justify-center px-3 h-8 leading-tight text-gray-600 bg-white hover:bg-gray-100 hover:text-gray-700"
                       >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m1 9 4-4-4-4"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                        1
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-gray-600 bg-white hover:bg-gray-100 hover:text-gray-700"
+                      >
+                        ...
+                      </a>
+                    </li>
+                    {iterationArray.map((_, index) => (
+                      <li key={index}>
+                        <a
+                          href="#"
+                          aria-current="page"
+                          className={`z-10 flex items-center justify-center px-2 h-8 leading-tight hover:bg-gray-100 hover:text-gray-700 ${
+                            index === 0
+                              ? "text-white bg-blue-700 rounded"
+                              : "text-gray-600 bg-white "
+                          }`}
+                        >
+                          1{index}
+                        </a>
+                      </li>
+                    ))}
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                      >
+                        <p id="hidecontent">Next &nbsp;</p>
+                        <svg
+                          class="w-2.5 h-2.5 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
+            </div>
             {/* pagination */}
           </div>
         </div>

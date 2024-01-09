@@ -53,6 +53,9 @@ module.exports = {
       zIndex: {
         60: '60',
       },
+      fontWeight: {
+        '500': 500,
+      },
     },
   },
   plugins: [
