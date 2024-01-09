@@ -6,4 +6,4 @@ Technologies Used -
  3. Vite
 
 Run Code - 
- npm run dev
+npm run dev
