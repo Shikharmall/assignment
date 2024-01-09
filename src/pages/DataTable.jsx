@@ -29,12 +29,13 @@ const DataTable = () => {
     //fontWeight: 'bold',  // Bold text
     // Add more styles as needed
   };
+  const shadowStyles = {
+    boxShadow: '0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.05)',
+    zIndex: '10', // Set the z-index to a value that places the element on top
+  };
 
-  const myInlineStyles1 = {
-    color: "#1A181E",
-    //fontSize: '16px',    // Font size of 16 pixels
-    //fontWeight: 'bold',  // Bold text
-    // Add more styles as needed
+  const shadowStyles11 = {
+    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04)',
   };
 
   return (
@@ -74,7 +75,7 @@ const DataTable = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
                 <div className="col">
-                  <div className="bg-white rounded-lg shadow-md p-3">
+                  <div className="bg-white rounded-lg shadow-md p-3" tyle={shadowStyles11}>
                     <div className="p-2">
                       <a className="flex items-center" href="">
                         <div>
@@ -94,7 +95,7 @@ const DataTable = () => {
                 </div>
 
                 <div className="col">
-                  <div className="bg-white rounded-lg shadow-md p-3">
+                  <div className="bg-white rounded-lg shadow-md p-3" style={shadowStyles11}>
                     <div className="p-2">
                       <a className="flex items-center" href="">
                         <div>
@@ -129,7 +130,7 @@ const DataTable = () => {
             </div>
           </div>
 
-          <div className="relative shadow-md sm:rounded-lg p-3 pt-0 m-8 mt-0">
+          <div className="relative shadow-md sm:rounded-lg p-3 pt-0 m-8 mt-0" style={shadowStyles}>
             <div className="flex flex-wrap items-center justify-between py-4 px-4 bg-white dark:bg-gray-800 rounded-tl-lg rounded-tr-lg pt-1">
               <div className="relative p-2 box-border">
                 <label htmlFor="table-search" className="sr-only">
