@@ -199,7 +199,7 @@ const DataTable = () => {
             </div>
 
             {/* table */}
-            <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto py-4 px-4">
+            <div className="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto pb-4 px-4">
               <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-lg">
                 <thead className="text-sm font-inter font-medium text-gray-600 bg-gray-100">
                   <tr>
