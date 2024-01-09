@@ -258,6 +258,7 @@ const DataTable = () => {
             {/* table */}
 
             {/* pagination */}
+            <div className="flex justify-center">
             <div
               className="flex p-2 bg-white rounded-bl-lg rounded-br-lg overflow-auto"
             >
@@ -343,6 +344,7 @@ const DataTable = () => {
                 </ul>
               </nav>
             </div>
+              </div>
             {/* pagination */}
           </div>
         </div>
