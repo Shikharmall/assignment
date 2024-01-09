@@ -51,7 +51,12 @@ const DataTable = () => {
           <div className="page-wrapper px-4 sm:px-6 lg:px-8 pt-5">
             <div className="page-content">
               <div className="flex justify-between">
-                <h6 className="mb-0 text-uppercase font-semibold">Overview</h6>
+                <h6
+                  className="mb-0 text-uppercase font-semibold"
+                  style={myInlineStyles}
+                >
+                  Overview
+                </h6>
                 <div>
                   <label className="sr-only">Last Month:</label>
                   <select className="block p-1 pl-3 pr-8 text-sm text-gray-500 border border-gray-300 placeholder-gray-400 rounded-sm bg-gray-50 focus:ring-gray-500 focus:border-gray-500 box-border">
@@ -73,10 +78,12 @@ const DataTable = () => {
                     <div className="p-2">
                       <a className="flex items-center" href="">
                         <div>
-                          <p className="text-gray-500 text-xs p-2">
+                          <p className="text-gray-500 text-xs pb-2">
                             Online orders{" "}
                           </p>
-                          <h4 className="text-gray-700 text-2xl font-semibold">
+                          <h4
+                            className="text-gray-700 text-2xl font-semibold font-inter font-medium"
+                          >
                             231
                           </h4>
                         </div>
@@ -91,10 +98,12 @@ const DataTable = () => {
                     <div className="p-2">
                       <a className="flex items-center" href="">
                         <div>
-                          <p className="text-gray-500 text-xs p-2">
+                          <p className="text-gray-500 text-xs pb-2">
                             Amount recieved{" "}
                           </p>
-                          <h4 className="text-gray-700 text-2xl font-semibold">
+                          <h4
+                            className="text-gray-700 text-2xl font-semibold font-inter font-medium"
+                          >
                             ₹23,92,312.19
                           </h4>
                         </div>
@@ -114,7 +123,7 @@ const DataTable = () => {
                   className="text-uppercase font-semibold"
                   style={myInlineStyles}
                 >
-                  Transactions | This month
+                  Transactions | This Month
                 </h6>
               </div>
             </div>
